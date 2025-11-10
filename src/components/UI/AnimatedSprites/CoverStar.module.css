@@ -1,7 +1,7 @@
 .SRMStar {
   width: 23px;
   height: 23px;
-  background: url("../public/sprites/cover-star-srm.png");
+  background: url("../sprites/cover-star-srm.png");
   background-size: 69px 23px;
   animation: playStar 1.5s steps(3) infinite;
   z-index: 10;
@@ -10,7 +10,7 @@
 .ILYStar {
   width: 23px;
   height: 23px;
-  background: url("../public/sprites/cover-star-ily.png");
+  background: url("../sprites/cover-star-ily.png");
   background-size: 69px 23px;
   animation: playStar 1.5s steps(3) infinite;
   z-index: 10;
@@ -19,7 +19,7 @@
 .bombStar {
   width: 23px;
   height: 23px;
-  background: url("../public/sprites/cover-star-bomb.png");
+  background: url("../sprites/cover-star-bomb.png");
   background-size: 69px 23px;
   animation: playStar 1.5s steps(3) infinite;
   z-index: 10;

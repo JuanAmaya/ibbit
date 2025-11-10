@@ -1,7 +1,7 @@
 .illitLogo {
   width: 10px;
   height: 3px;
-  background: url("../public/sprites/logo.png") no-repeat;
+  background: url("../sprites/logo.png") no-repeat;
   animation: playLogo 5s steps(10) infinite;
 }
 

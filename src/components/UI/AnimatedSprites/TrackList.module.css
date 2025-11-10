@@ -1,7 +1,7 @@
 .darkCloudSprite {
   width: 25px;
   height: 25px;
-  background: url("../public/sprites/dark-cloud.png");
+  background: url("../sprites/dark-cloud.png");
   background-size: 50px 25px;
   animation: playDarkClouds 1s steps(2) infinite;
 }

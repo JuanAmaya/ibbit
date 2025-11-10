@@ -1,7 +1,7 @@
 .raibowSprite {
   width: 28px;
   height: 16px;
-  background: url("../public/sprites/rainbow.png");
+  background: url("../sprites/rainbow.png");
   background-size: 224px 16px;
   animation: playRainbow 3s steps(8) infinite;
 }

@@ -1,7 +1,7 @@
 .sunSprite {
   width: 21px;
   height: 21px;
-  background: url("../public/sprites/sun.png");
+  background: url("../sprites/sun.png");
   background-size: 42px 21px;
   animation: playSun 1s steps(2) infinite;
   position: relative;
@@ -11,7 +11,7 @@
 .moonSprite {
   width: 21px;
   height: 21px;
-  background: url("../public/sprites/moon.png");
+  background: url("../sprites/moon.png");
   background-size: 42px 21px;
   animation: playSun 1s steps(2) infinite;
   position: relative;

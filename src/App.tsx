@@ -50,7 +50,7 @@ function App() {
           element: <LandingPage />,
         },
         ...ALBUMS_PAGES.map((album) => ({
-          path: album.path,
+          path: `/ibbit/${album.path}`,
           element: (
             <AlbumPage
               title={album.title}
@@ -62,7 +62,7 @@ function App() {
           ),
         })),
         {
-          path: "members",
+          path: "/ibbit/members",
           element: <MembersPage />,
         },
       ],

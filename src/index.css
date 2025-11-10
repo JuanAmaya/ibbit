@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-softblue: #c8eefb;
+  --color-bg-darkblue: #a4e0fe;
+  --color-bg-softpurple: #a9bef9;
+  --color-blue-iroha: #2598f7;
+  --color-purple-moka: #b425f7;
+  --color-red-yunah: #f72529;
+  --color-pink-wonhee: #f72595;
+  --color-yellow-minju: #f7e525;
+  --color-gray-album: #586264;
+  --color-green-album: #237746;
+  --color-blue-album: #062945;
+  --color-pink-members: #f72595;
+}
+
+@font-face {
+  font-family: "DnfBitbeatV2";
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf")
+    format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "DnfBitbeatV2", Arial, sans-serif;
+  background-color: var(--color-bg-darkblue);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.pixelArt {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}

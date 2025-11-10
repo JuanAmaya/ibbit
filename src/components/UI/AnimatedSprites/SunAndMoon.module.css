@@ -1,0 +1,149 @@
+.sunSprite {
+  width: 21px;
+  height: 21px;
+  background: url("../public/sprites/sun.png");
+  background-size: 42px 21px;
+  animation: playSun 1s steps(2) infinite;
+  position: relative;
+  z-index: 10;
+}
+
+.moonSprite {
+  width: 21px;
+  height: 21px;
+  background: url("../public/sprites/moon.png");
+  background-size: 42px 21px;
+  animation: playSun 1s steps(2) infinite;
+  position: relative;
+  z-index: 10;
+}
+
+@keyframes playSun {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -42px 0;
+  }
+}
+
+.groupSlider {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+}
+
+.groupPic {
+  width: 50%;
+  image-rendering: initial;
+  position: absolute;
+  z-index: 1;
+  animation: fade-groupPics 27s infinite;
+  opacity: 0;
+}
+
+.groupPic:nth-child(1) {
+  opacity: 1;
+}
+
+.groupPic:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.groupPic:nth-child(3) {
+  animation-delay: 6s;
+}
+
+.groupPic:nth-child(4) {
+  animation-delay: 9s;
+}
+
+.groupPic:nth-child(5) {
+  animation-delay: 12s;
+}
+
+.groupPic:nth-child(6) {
+  animation-delay: 15s;
+}
+
+.groupPic:nth-child(7) {
+  animation-delay: 18s;
+}
+
+.groupPic:nth-child(8) {
+  animation-delay: 21s;
+}
+
+.groupPic:nth-child(9) {
+  animation-delay: 24s;
+}
+
+.memberPic {
+  width: 50%;
+  image-rendering: initial;
+  position: absolute;
+  z-index: 1;
+  left: 6px;
+  animation: fade-groupPics 9s infinite;
+  opacity: 0;
+}
+
+.memberPic:nth-child(1) {
+  opacity: 1;
+}
+
+.memberPic:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.memberPic:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes fade-groupPics {
+  10% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.sunBanner {
+  animation: floatSoft 5s infinite;
+  will-change: transform, background-position;
+}
+
+@keyframes floatSoft {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sunBanner {
+    animation: floatSoft 1s steps(2) infinite;
+  }
+}

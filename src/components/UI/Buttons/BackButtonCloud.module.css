@@ -1,0 +1,35 @@
+.arrowCloudSprite {
+  width: 23px;
+  height: 26px;
+  background: url("../public/sprites/arrow-cloud.png");
+  background-size: 92px 26px;
+  animation: playArrowCloud 1.5s steps(4) infinite;
+}
+
+@keyframes playArrowCloud {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -92px 0;
+  }
+}
+
+.floatAnimation {
+  animation: cloudlyFloat 4s ease-in-out infinite;
+}
+
+@keyframes cloudlyFloat {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateY(-2px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

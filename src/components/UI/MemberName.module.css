@@ -1,0 +1,28 @@
+.nameContainer li .floating {
+  animation: floatingName 3s ease-in-out infinite;
+}
+
+.nameContainer li:nth-child(1) .floating {
+  animation-delay: 0s;
+}
+.nameContainer li:nth-child(2) .floating {
+  animation-delay: 0.4s;
+}
+.nameContainer li:nth-child(3) .floating {
+  animation-delay: 0.3s;
+}
+
+@keyframes floatingName {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,39 @@
+.slide1 {
+  animation: slideX 6s ease-in-out infinite;
+}
+.slide2 {
+  animation: slideXReverse 7s ease-in-out infinite;
+}
+.slide3 {
+  animation: slideX 8s ease-in-out infinite;
+}
+.slide4 {
+  animation: slideXReverse 9s ease-in-out infinite;
+}
+.slide5 {
+  animation: slideXReverse 10s ease-in-out infinite;
+}
+
+@keyframes slideX {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideXReverse {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

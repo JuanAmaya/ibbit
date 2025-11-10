@@ -1,0 +1,15 @@
+.cloudButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: none;
+  height: 136px;
+}
+
+.cloudButton:hover {
+  cursor: pointer;
+  scale: 1.1;
+}

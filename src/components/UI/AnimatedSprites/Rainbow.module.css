@@ -1,0 +1,39 @@
+.raibowSprite {
+  width: 28px;
+  height: 16px;
+  background: url("../public/sprites/rainbow.png");
+  background-size: 224px 16px;
+  animation: playRainbow 3s steps(8) infinite;
+}
+
+@keyframes playRainbow {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -224px 0;
+  }
+}
+
+.rainbowContainer {
+  animation: floatingRainbow 12s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes floatingRainbow {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(5px, -10px);
+  }
+  50% {
+    transform: translate(0px, -20px);
+  }
+  75% {
+    transform: translate(-5px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

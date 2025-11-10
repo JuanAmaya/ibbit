@@ -1,0 +1,15 @@
+.illitLogo {
+  width: 10px;
+  height: 3px;
+  background: url("../public/sprites/logo.png") no-repeat;
+  animation: playLogo 5s steps(10) infinite;
+}
+
+@keyframes playLogo {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100px 0;
+  }
+}

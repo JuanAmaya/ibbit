@@ -6,7 +6,7 @@ import { AnimatePresence } from "motion/react";
 import MembersPage from "./pages/MembersPage";
 
 const SRM_DATA = {
-  path: "/srm",
+  path: "srm",
   title: ["SUPER", "REAL", "ME"],
   strokeClass: "SRMStroke",
   tracks: [
@@ -20,7 +20,7 @@ const SRM_DATA = {
 };
 
 const ILY_DATA = {
-  path: "/ily",
+  path: "ily",
   title: ["I'LL", "LIKE", "YOU"],
   strokeClass: "ILYStroke",
   tracks: ["I'll Like You", "Cherish", "IYKYK", "Pimple", "Tick-Tack"],
@@ -29,7 +29,7 @@ const ILY_DATA = {
 };
 
 const BOMB_DATA = {
-  path: "/bomb",
+  path: "bomb",
   title: ["bomb"],
   strokeClass: "bombStroke",
   tracks: ["Little Monster", "Do the Dance", "oops!", "밤소풍", "Jellyous"],
@@ -42,7 +42,7 @@ const ALBUMS_PAGES = [SRM_DATA, ILY_DATA, BOMB_DATA];
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/ibbit/",
+      path: "/ibbit",
       element: <Layout />,
       children: [
         {

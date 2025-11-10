@@ -42,7 +42,7 @@ const ALBUMS_PAGES = [SRM_DATA, ILY_DATA, BOMB_DATA];
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/ibbit/",
       element: <Layout />,
       children: [
         {

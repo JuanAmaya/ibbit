@@ -62,7 +62,7 @@ function App() {
           ),
         })),
         {
-          path: "/members",
+          path: "members",
           element: <MembersPage />,
         },
       ],
